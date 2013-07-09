@@ -24,6 +24,10 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PACKAGES += \
     Stk
 
+# Ubuntu
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/ubuntu-session.d.conf:system/etc/ubuntu-session.d/xt926.conf
+
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320
